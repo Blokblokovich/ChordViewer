@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/png" href="/favicon.ico">
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="eel.js"></script>
+		<script type="text/javascript" src="main.js">
+
+		</script>
+
+		<title>Chord Viewer</title>
+
+	</head>
+
+	<body>
+
+		<header>
+			<img id="menu_button" src="menu_button.svg">
+			<b id="top_title">Chord Viewer</b>
+		</header>
+
+		<div class="notselector">
+			<b>German Notation</b>
+		</div>
+
+		<div class="screen">
+			<div id="1" class="screen_item"></div>
+			<div id="2" class="screen_item"></div>
+			<div id="3" class="screen_item"></div>
+			<div id="4" class="screen_item">>-Here</div>
+			<div id="5" class="screen_item">will be</div>
+			<div id="6" class="screen_item">chords!</div>
+			<div id="7" class="screen_item"></div>
+			<div id="8" class="screen_item"></div>
+			<div id="9" class="screen_item"></div>
+        </div>
+
+		<div class="bottom">
+
+			<input id="key" type="text" placeholder="Enter the key name" onkeypress="if(event.keyCode == 13){getkey()}">
+
+			<button onclick="getkey()" id="show">Show chords</button>
+
+		</div>
+
+        <div class="version">
+			<b id="version">version 0.0.2 (alpha test)</b>
+		</div>
+
+	</body>
+
+</html>
