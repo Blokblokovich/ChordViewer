@@ -75,7 +75,6 @@ def main(key):
                            chord.pmname, chord.name, chord.name.title(),
                            chord.pmqnt, chord.qnt.lower(), chord.qnt)
 
-        del chord
     else:
         eel.keyerror()
 
