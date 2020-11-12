@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstring>
 using namespace std;
 
 class Key
@@ -15,7 +14,7 @@ class Key
     public:
         Key(string x);
         string getname();
-        signed index(string x);
+        signed index(string x, string y);
 };
 
 
@@ -43,7 +42,9 @@ Key::Key(string x)
     if(name.compare(0, 1, "B") == 0)
         posn = 6;
     else
-        posn = ;
+        posn = index(x, "w");
+    
+    cout << posn << endl;
     
 }
 
@@ -52,11 +53,37 @@ string Key::getname()
     return name;
 }
 
-/*signed Key::index(string x)
+signed Key::index(string x, string y)
 {
     signed n = sizeof(keysb) / sizeof(keysb[0]);
     signed b = sizeof(keysw) / sizeof(keysw[0]);
-
     signed i;
-    for(i; i < n; i++)
-}*/
+
+    if(y.compare(0, 1, "w") == 0)
+    {
+        for(i; i < n; i++)
+        {
+            if(keysw[i] == x)
+            {
+                break;
+            }
+        }
+
+        i = (i < n)? i: -1;
+    }
+
+    if(y.compare(0, 1, "b") == 0)
+    {
+        for(i; i < b; i++)
+        {
+            if(keysb[i] == x)
+            {
+                break;
+            }
+        }
+        
+        i = (i < n)? i: -1;
+    }
+
+    return i;
+}
