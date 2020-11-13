@@ -61,7 +61,7 @@ signed Key::index(string x, string y)
 
     if(y.compare(0, 1, "w") == 0)
     {
-        for(i; i < n; i++)
+        for(i = 0; i < n; i++)
         {
             if(keysw[i] == x)
             {
@@ -74,7 +74,7 @@ signed Key::index(string x, string y)
 
     if(y.compare(0, 1, "b") == 0)
     {
-        for(i; i < b; i++)
+        for(i = 0; i < b; i++)
         {
             if(keysb[i] == x)
             {
