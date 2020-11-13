@@ -45,7 +45,6 @@ Key::Key(string x)
         posn = index(x, "w");
     
     cout << posn << endl;
-    
 }
 
 string Key::getname()
