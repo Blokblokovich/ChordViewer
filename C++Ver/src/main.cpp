@@ -69,7 +69,6 @@ signed Key::index(string x, string y)
             }
         }
 
-        i = (i < n)? i: -1;
     }
 
     if(y.compare(0, 1, "b") == 0)
@@ -81,9 +80,10 @@ signed Key::index(string x, string y)
                 break;
             }
         }
-        
-        i = (i < n)? i: -1;
+
     }
+
+    i = (i < n) || (i < b)? i: -1;
 
     return i;
 }
