@@ -28,8 +28,6 @@ signed main()
     
     Key inkey(key);
 
-    cout << inkey.getname() << endl;
-
     return 0;
 }
 
@@ -42,7 +40,7 @@ Key::Key(string x)
     if(name.compare(0, 1, "B") == 0)
         posn = 6;
     else
-        posn = index(x, "w");
+        posn = index(name, "b");
     
     cout << posn << endl;
 }
@@ -52,37 +50,37 @@ string Key::getname()
     return name;
 }
 
-signed Key::index(string x, string y)
+signed Key::index(string keyname, string arrname)
 {
-    signed n = sizeof(keysb) / sizeof(keysb[0]);
-    signed b = sizeof(keysw) / sizeof(keysw[0]);
+    signed n = sizeof(keysw) / sizeof(keysb[0]);
+    signed b = sizeof(keysb) / sizeof(keysw[0]);
     signed i;
+    signed len = keyname.length();
 
-    if(y.compare(0, 1, "w") == 0)
+    if(arrname.compare(0, 1, "w") == 0)
     {
         for(i = 0; i < n; i++)
         {
-            if(keysw[i] == x)
-            {
+            if(keyname.compare(0, keyname.length(), keysw[i]) == 0)
                 break;
-            }
         }
 
     }
 
-    if(y.compare(0, 1, "b") == 0)
+    if(arrname.compare(0, 1, "b") == 0)
     {
         for(i = 0; i < b; i++)
         {
-            if(keysb[i] == x)
-            {
+            string key = keysb[i];
+            cout << key << " " << keyname.compare(0, len, key) << endl;
+            if(keyname.compare(0, len, key) == 0)
                 break;
-            }
         }
 
     }
 
-    i = (i < n) || (i < b)? i: -1;
+    if((i < n) || (i < b))
+        i = -1;
 
     return i;
 }
