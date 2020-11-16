@@ -52,8 +52,8 @@ string Key::getname()
 
 signed Key::index(string keyname, string arrname)
 {
-    signed n = sizeof(keysw) / sizeof(keysb[0]);
-    signed b = sizeof(keysb) / sizeof(keysw[0]);
+    signed n = sizeof(keysw) / sizeof(keysw[0]);
+    signed b = sizeof(keysb) / sizeof(keysb[0]);
     signed i;
     signed len = keyname.length();
 
@@ -79,7 +79,7 @@ signed Key::index(string keyname, string arrname)
 
     }
 
-    if((i < n) || (i < b))
+    if((i == n) || (i == b))
         i = -1;
 
     return i;
