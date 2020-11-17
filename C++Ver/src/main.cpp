@@ -40,16 +40,20 @@ Key::Key(string x)
     if(name.compare(0, 1, "B") == 0)
         posn = 6;
     else
-        posn = index(name, "b");
-    
+        posn = index(name, "w");
+
     cout << posn << endl;
 }
 
+
+// Key class method to get name
 string Key::getname()
 {
     return name;
 }
 
+
+// Key class method that found index of array element
 signed Key::index(string keyname, string arrname)
 {
     signed n = sizeof(keysw) / sizeof(keysw[0]);
@@ -61,6 +65,7 @@ signed Key::index(string keyname, string arrname)
     {
         for(i = 0; i < n; i++)
         {
+            string key = keysb[i];
             if(keyname.compare(0, keyname.length(), keysw[i]) == 0)
                 break;
         }
@@ -72,7 +77,6 @@ signed Key::index(string keyname, string arrname)
         for(i = 0; i < b; i++)
         {
             string key = keysb[i];
-            cout << key << " " << keyname.compare(0, len, key) << endl;
             if(keyname.compare(0, len, key) == 0)
                 break;
         }
