@@ -9,37 +9,29 @@ import UIKit
 
 class ViewController: UIViewController
 {
-	@IBOutlet weak var labelFirst: UILabel!
-	@IBOutlet weak var button: UIButton!
-	@IBOutlet weak var segmentControl: UISegmentedControl!
+	@IBOutlet weak var mainScreen: UILabel!
+	@IBOutlet weak var textFiled: UITextField!
+	@IBOutlet weak var textchangerview: UISlider!
 	
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
+		textchangerview.value = 17
+		
+		var comp1 = Comp(cpu: 3.5, ram: 128)
+		print(comp1.cpu)
+		print(comp1.ram)
+	}
 
-		button.setTitle("Push me!", for: .normal)
-		segmentControl.selectedSegmentIndex = 1
+	@IBAction func buttonPress(_ sender: UIButton)
+	{
+		let name = textFiled.text
+		mainScreen.text = "Hello, \(name ?? "(your name)")!"
 	}
 	
-	@IBAction func pushButton(_ sender: UIButton)
+	@IBAction func textchanger(_ sender: UISlider)
 	{
-		labelFirst.text = "Hello!"
-	}
-	@IBAction func colorControl(_ sender: UISegmentedControl)
-	{
-		if sender.selectedSegmentIndex == 0
-		{
-			button.backgroundColor = .red
-		}
-		
-		else if sender.selectedSegmentIndex == 1
-		{
-			button.backgroundColor = .green
-		}
-		
-		else
-		{
-			button.backgroundColor = .blue
-		}
+		let textsize = CGFloat(sender.value)
+		mainScreen.font = UIFont.systemFont(ofSize: textsize)
 	}
 }

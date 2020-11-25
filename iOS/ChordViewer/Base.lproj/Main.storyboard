@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4GV-kI-eB6">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,120 +10,59 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="8y4-cv-wJo">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChordViewer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="4GV-kI-eB6" customClass="ViewController" customModule="ChordViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tQU-2K-Rgq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello world!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-6Y-dab">
-                                <rect key="frame" x="67" y="66" width="240" height="20.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here will be text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8w2-ij-0jm">
+                                <rect key="frame" x="16" y="78" width="343" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jcz-6t-WNh">
-                                <rect key="frame" x="103" y="154" width="170" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.35024192548462363" green="0.2944548944510389" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <segments>
-                                    <segment title="Red"/>
-                                    <segment title="Green"/>
-                                    <segment title="Blue"/>
-                                </segments>
-                                <color key="tintColor" red="1" green="0.37611069628663074" blue="0.202647450006326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="colorControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="nlm-JX-dmY"/>
-                                </connections>
-                            </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUS-cY-U5C">
-                                <rect key="frame" x="97" y="341" width="180" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iB6-Hr-gkz">
+                                <rect key="frame" x="109" y="180" width="156" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" minimumValueImage="poweroff" catalog="system" maximumValueImage="poweron" translatesAutoresizingMaskIntoConstraints="NO" id="dpL-3V-MdP">
-                                <rect key="frame" x="89" y="226" width="199" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12m-dw-LAb">
+                                <rect key="frame" x="144" y="232" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.68142545089999995" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="minimumTrackTintColor" red="1" green="0.37611069629999999" blue="0.20264745000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="0.3502419255" green="0.29445489450000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="thumbTintColor" systemColor="systemRedColor"/>
-                            </slider>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcQ-1b-1ok">
-                                <rect key="frame" x="163" y="291" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" systemColor="systemYellowColor"/>
-                                <color key="thumbTintColor" systemColor="systemGreenColor"/>
-                            </switch>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="S5R-NL-GXa">
-                                <rect key="frame" x="165" y="336" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                            </activityIndicatorView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="KNU-5s-lCS">
-                                <rect key="frame" x="112" y="433" width="150" height="5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="VD2-7v-bcC">
-                                <rect key="frame" x="139" y="479" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                            </stepper>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="55R-WT-QeY">
-                                <rect key="frame" x="103" y="553" width="183" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnJ-4f-9RR">
-                                <rect key="frame" x="114" y="101" width="149" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" systemColor="systemOrangeColor"/>
-                                </state>
+                                <state key="normal" title="Enter"/>
                                 <connections>
-                                    <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6iN-by-9yp"/>
+                                    <action selector="buttonPress:" destination="4GV-kI-eB6" eventType="touchUpInside" id="Rmb-Ca-GKA"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="17" minValue="10" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="odo-Ql-IF8">
+                                <rect key="frame" x="100" y="313" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="textchanger:" destination="4GV-kI-eB6" eventType="valueChanged" id="C7u-CM-a2x"/>
+                                </connections>
+                            </slider>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="FfO-dz-P3E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="button" destination="gnJ-4f-9RR" id="qM8-3m-CaG"/>
-                        <outlet property="labelFirst" destination="gh1-6Y-dab" id="g9h-pC-wys"/>
-                        <outlet property="segmentControl" destination="Jcz-6t-WNh" id="Akp-af-3wI"/>
+                        <outlet property="mainScreen" destination="8w2-ij-0jm" id="2xw-hQ-Wkh"/>
+                        <outlet property="textFiled" destination="iB6-Hr-gkz" id="5CC-NE-yPz"/>
+                        <outlet property="textchangerview" destination="odo-Ql-IF8" id="3Ee-nA-crM"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="trT-2G-MLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="78.325123152709367"/>
+            <point key="canvasLocation" x="-356" y="-7.389162561576355"/>
         </scene>
     </scenes>
     <resources>
-        <image name="poweroff" catalog="system" width="128" height="121"/>
-        <image name="poweron" catalog="system" width="39" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -15,6 +15,7 @@
 		F3359442256A2B7D00832551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3359440256A2B7D00832551 /* LaunchScreen.storyboard */; };
 		F335944D256A2B7D00832551 /* ChordViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F335944C256A2B7D00832551 /* ChordViewerTests.swift */; };
 		F3359458256A2B7D00832551 /* ChordViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3359457256A2B7D00832551 /* ChordViewerUITests.swift */; };
+		F33A95BF256E3BC20015EFF5 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A95BE256E3BC20015EFF5 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F3359453256A2B7D00832551 /* ChordViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3359457256A2B7D00832551 /* ChordViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordViewerUITests.swift; sourceTree = "<group>"; };
 		F3359459256A2B7D00832551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33A95BE256E3BC20015EFF5 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				F335943E256A2B7D00832551 /* Assets.xcassets */,
 				F3359440256A2B7D00832551 /* LaunchScreen.storyboard */,
 				F3359443256A2B7D00832551 /* Info.plist */,
+				F33A95BE256E3BC20015EFF5 /* test.swift */,
 			);
 			path = ChordViewer;
 			sourceTree = "<group>";
@@ -195,7 +198,7 @@
 				TargetAttributes = {
 					F3359431256A2B7400832551 = {
 						CreatedOnToolsVersion = 12.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					F3359447256A2B7D00832551 = {
 						CreatedOnToolsVersion = 12.2;
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F335943A256A2B7400832551 /* ViewController.swift in Sources */,
+				F33A95BF256E3BC20015EFF5 /* test.swift in Sources */,
 				F3359436256A2B7400832551 /* AppDelegate.swift in Sources */,
 				F3359438256A2B7400832551 /* SceneDelegate.swift in Sources */,
 			);
@@ -438,11 +442,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChordViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Blokblokovich.ChordViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,11 +460,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChordViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Blokblokovich.ChordViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

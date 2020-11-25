@@ -1,8 +1,13 @@
-//
-//  test.swift
-//  ChordViewer
-//
-//  Created by МакЮзер on 25.11.2020.
-//
-
 import Foundation
+
+class Comp
+{
+	var cpu: Float
+	var ram: Int
+	
+	init(cpu: Float, ram: Int)
+	{
+		self.cpu = cpu
+		self.ram = ram
+	}
+}
