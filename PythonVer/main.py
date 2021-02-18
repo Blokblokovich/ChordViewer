@@ -1,16 +1,15 @@
 import eel
-
 eel.init('web')
 
 
 class Key:
-    keysb = ['C', 'C/D', 'D', 'D/E', 'E', 'F', 'F/G', 'G', 'G/A', 'A', 'A/H', 'H']
-    keysw = ['C', 'D', 'E', 'F', 'G', 'A', 'H']
+    keysb = ('C', 'C/D', 'D', 'D/E', 'E', 'F', 'F/G', 'G', 'G/A', 'A', 'A/H', 'H')
+    keysw = ('C', 'D', 'E', 'F', 'G', 'A', 'H')
 
     def __init__(self, name):
         self.name = name
         if 'B' in self.name.upper():
-            self.posn = Key.keysw.index('H')
+            self.posn = 6
         else:
             self.posn = Key.keysw.index(self.name[0].upper())
 
@@ -34,7 +33,6 @@ class Key:
         neighborkey = Key.keysw[(self.posn + posw) % 7]
         nghkeyposw = (self.posn + posw) % 7
         nghkeyposb = (self.pos + posb) % 12
-        Key.keysb.index(Key.keysw[nghkeyposw]) - nghkeyposb
 
         if (Key.keysb.index(Key.keysw[nghkeyposw]) + 11) % 12 == nghkeyposb:
             if 'A' in neighborkey:
@@ -79,6 +77,6 @@ def main(key):
         eel.keyerror()
 
 
-eel.start('main.html', mode='user default', port=2783, size=(405, 720))
+eel.start('main.html', mode='user default', size=(405, 720))
 
-"""version 0.0.2 (alpha test)"""
+"""version 1.0 (beta test)"""

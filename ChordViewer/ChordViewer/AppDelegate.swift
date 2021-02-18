@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ChordViewer
 //
-//  Created by Blokblokovich on 22.11.2020.
+//  Created by МакЮзер on 11.02.2021.
 //
 
 import UIKit
