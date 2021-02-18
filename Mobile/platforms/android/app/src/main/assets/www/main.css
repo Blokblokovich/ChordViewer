@@ -1,0 +1,114 @@
+body
+{
+	background-color: #000018;
+	width: 1080px;
+	height: 1920px;
+}
+
+header
+{
+	width: 100%;
+	height: 10%;
+	background-color: #000;
+}
+
+img#menu_button
+{
+	float: left;
+	width: 17.7%;
+	height: 100%;
+}
+
+b#top_title
+{
+	color: #fff;
+	text-align: center;
+	width: 82.2%;
+	height: 50%;
+	padding-top: 5%;
+	float: left;
+	font-size: 637.5%;
+}
+
+div.ntselector
+{
+	width: 100%;
+	height: 10%;
+}
+
+div.notselector b
+{
+	color: #fff;
+	width: 100%;
+	height: 50%;
+	padding-top: 5%;
+	text-align: center;
+	font-size: 400%;
+	display: block;
+}
+
+div.screen
+{
+	width: 100%;
+	height: 50%;
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+	grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+div.screen_item
+{
+	color: #fff;
+	border: solid 1px;
+	border-color: #000018;
+	padding-top: 25%;
+	padding-bottom: 25%;
+	text-align: center;
+	font-size: 650%;
+}
+
+div.bottom
+{
+	width: 100%;
+	height: 20%;
+}
+
+input#key
+{
+	width: 90%;
+	height: 21.88%;
+	margin: 5%;
+	border: none;
+	padding: 0%;
+	font-size: 400%;
+	text-align: center;
+}
+
+button#show
+{
+	width: 90%;
+	height: 21.88%;
+	margin: 5%;
+	font-size: 350%;
+	padding: 0%;
+	border: none;
+	background-color: #fcad02;
+	color: #0251fc;
+}
+
+div.version
+{
+	width: 100%;
+	height: 10%;
+}
+
+b#version
+{
+	width: 100%;
+	height: 50%;
+	padding-top: 10%;
+	color: #fff;
+	display: block;
+	text-align: center;
+	font-size: 200%;
+}
